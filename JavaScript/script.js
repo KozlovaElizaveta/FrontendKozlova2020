@@ -17,14 +17,37 @@ var employees = [{"name":"Alex","surname":"Yavkin","position":"sr. engineer","de
 	department: 'UX'
 }
 
-function yourFunction(employees) {
-  const result = [];
+//function yourFunction(employees) {
+ // const result = [];
 	/* Write your code here */
-  return result;
-}
+ // return result;
+//}
+//задание 1
+var yourFunction = employees.filter(function(employees) {
+	return employees.gender == 'male' && employees.department == "DevOps";}).sort(function(a,b) { return new Date(a.birthday) - new Date(b.birthday); });
+console.log(yourFunction);
 
- // should show the result
-console.log(yourFunction(employees));
+//задание 2
+function numberEmployees(employees){
+	let map = new Map();
+	for (let i = 0; i < employees.length; i++) {
+		let employee = employees[i];
+		let gender= employee.gender;
+		let number = 0;
+		if (map.has(gender)) {
+			number =  map.get(gender);
+			map.set(gender, number + 1);
+		}
+		else {
+			map.set(gender,1);
+		}
+	}
+	let result = Array.from(map.entries()).sort(function(a,b){
+		return a[1]-b[1];
+	});
+	return result;
+} 
+console.log(numberEmployees(employees));
 
 
 
@@ -49,4 +72,4 @@ function exampleFunction(employees) {
 }
 
 // uncomment to observe example
-console.log(exampleFunction(employees));
+//console.log(exampleFunction(employees));
