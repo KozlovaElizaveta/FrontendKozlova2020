@@ -1,0 +1,65 @@
+
+
+
+.table1 {
+    background: #208BEE;
+    color: white;
+
+}
+
+[href] {
+    color: white;
+}
+
+a { 
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+} 
+
+a:hover {
+    font-weight: bold;
+}
+
+.zag {
+    font-weight: bold;
+}
+
+
+.button7 {
+    font-weight: bold;
+    border: none;
+    color: white; /*текст*/
+    text-decoration: none;/*подчеркивание ссылки*/
+    padding: 10px 5px;/*внутренний отступ*/
+    border-radius: 5px; /*закругление углов*/
+    background: #208BEE;
+    
+  } 
+  .button7:hover { background: #1982e6; border: none; }
+  .button7:active {
+    background: #0e72cf;
+    border: none;
+  }
+
+  .button8 {
+    font-weight: bold;
+    border: none;
+    color: white; /*текст*/
+    text-decoration: none;/*подчеркивание ссылки*/
+    padding: 10px 150px;/*внутренний отступ*/
+    border-radius: 5px; /*закругление углов*/
+    background: #208BEE;
+    
+  } 
+  .button8:hover { background: #1982e6; border: none; }
+  .button8:active {
+    background: #0e72cf;
+    border: none;
+  }
+  
+
+
+
+
+
+
+

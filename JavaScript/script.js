@@ -24,7 +24,8 @@ var employees = [{"name":"Alex","surname":"Yavkin","position":"sr. engineer","de
 //}
 //задание 1
 var yourFunction = employees.filter(function(employees) {
-	return employees.gender == 'male' && employees.department == "DevOps";}).sort(function(a,b) { return new Date(a.birthday) - new Date(b.birthday); });
+	return employees.gender == 'male' && employees.department == "DevOps";})
+	.sort(function(a,b) { return new Date(a.birthday) - new Date(b.birthday); });
 console.log(yourFunction);
 
 //задание 2
