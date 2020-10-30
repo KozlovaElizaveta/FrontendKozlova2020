@@ -16,7 +16,7 @@ a {
 } 
 
 a:hover {
-    font-weight: bold;
+    background: #1982e6;
 }
 
 .zag {
@@ -56,6 +56,23 @@ a:hover {
     border: none;
   }
   
+.phone-number {
+    font-size: 30px;
+    
+}
+
+.logo {
+    font-size: 40px;
+    font-family: Roboto;
+    -webkit-text-stroke: .02em #FAFF00;
+    color: #019F24;
+}
+
+.tovar:hover {
+    box-shadow:0 0 10px rgb(191, 191, 191);
+}
+
+
 
 
 
